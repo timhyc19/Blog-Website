@@ -1,33 +1,41 @@
-<%- include("partials/header") -%>
+<div class="block2">
+  <%- include("partials/header") -%>
 
-<div class="w3-container w3-animate-opacity">
-  <div class="block1">
-    <b></b>
-    <h1>Hi,</h1>
-    <h1>I'm <span style="color:	#c44240;">Tim.</span></h1>
-    <h1>University of Waterloo</h1>
-    <p><%= startingContent %></p>
+  <div class="w3-container w3-animate-opacity">
+    <div class="block1">
+      <b></b>
+      <!-- <img src="profilePicture.png" width="500px" height="500px"> -->
+      <h1>Hi,</h1>
+      <h1>I'm <span style="color:	#c44240;">Tim.</span></h1>
+      <h1>University of Waterloo</h1>
+      <p><%= startingContent %></p>
 
-    <div class="breakBox">
-      <button class="button">Contact Me</button>
+      <div class="w3-animate-opacity">
+        <ul class="nav navbar-nav navbar-space breakBox">
+          <!-- 6 -->
+          <a href="#"><i class="material-icons" style='font-size:32px'">email</i></a>
+          <a href="https://github.com/timhyc19" target="_blank"><i class='fab fa-github' style='font-size:33px'></i></a>
+          <a href="https://www.linkedin.com/in/tim-chung-7b12a9194/" target="_blank"><i class='fab fa-linkedin' style='font-size:34px'></i></a>
+        </ul>
+      </div>
     </div>
+  </div>
+
+  <div class="blogText w3-animate-left">
+    <h1>Blog:</h1>
+
+    <% console.log(posts); %>
+
+    <% posts.forEach(function(post){ %>
+
+    <h1><%=post.title %></h1>
+    <p>
+      <%=post.content.substring(0,100) + " ..." %>
+      <a href="/posts/<%= post.title%>">Read More</a>
+    </p>
+
+    <% }); %>
   </div>
 </div>
 
-<div class="blogText">
-  <h1>Blog:</h1>
-
-  <% console.log(posts); %>
-
-  <% posts.forEach(function(post){ %>
-
-  <h1><%=post.title %></h1>
-  <p>
-    <%=post.content.substring(0,100) + " ..." %>
-    <a href="/posts/<%= post.title%>">Read More</a>
-  </p>
-
-  <% }); %>
-</div>
-
-<%- include("partials/footer") -%>
+  <%- include("partials/footer") -%>

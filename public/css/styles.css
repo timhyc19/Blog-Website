@@ -16,6 +16,12 @@
     color: #1abc9c !important;
 }
 
+.navbar-space i {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+
 .footer-padding {
 	padding-bottom: 20px;
 }
@@ -29,8 +35,12 @@
 	background-color: black;
 }
 
+
 .footer p {
-	margin-top: 25px;
+  position: absolute;
+  top: 30%;
+  width: 100%;
+  text-align: center;
 	font-size: 12px;
   color: #fff;
 }
@@ -52,6 +62,10 @@
 .block1 {
   padding-top: 130px;
   padding-left: 0px;
+}
+
+.block2{
+  padding-bottom: 120px;
 }
 
 .breakBox{
@@ -89,3 +103,26 @@
 .introTitlePage{
   padding-top: 40px;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+img{
+  float: right;
+}
+
+.square {
+    float:left;
+    position: relative;
+    width: 30%;
+    padding-bottom : 30%;
+    margin:1.66%;
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.img1{background-image:url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');}
