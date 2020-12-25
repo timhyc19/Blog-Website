@@ -17,8 +17,8 @@
 }
 
 .navbar-space i {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: 6px;
+  padding-right: 6px;
 }
 
 
@@ -82,7 +82,6 @@
   border: 2px solid black;
   border-color: #c44240;
   color: #c44240;
-  font-family: 'Times New Roman', serif;
   padding: 8px 25px;
   text-align: center;
   text-decoration: none;
@@ -188,8 +187,17 @@ img{
   transition: 0.8s;
 }
 
-.img1{background-image:url('https://www.shad.ca/wp-content/uploads/2019/05/SHAD-footer-logo@2x.png');}
+.typed-cursor
+{
+    display:none;
+}
 
-.img2{background-image:url('https://bostonpizza.com/content/dam/bostonpizza/bp-foundation/images/high-resolution/charity-partners/big_brother_sister_white_logo.png');}
+.zoom:hover{
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+}
 
-.img3{background-image:url('https://www.shad.ca/wp-content/uploads/2019/05/SHAD-footer-logo@2x.png');}
+.informationProjects p,h3{
+  color: white;
+}

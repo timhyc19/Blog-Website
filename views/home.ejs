@@ -6,30 +6,39 @@
       <b></b>
       <!-- <img src="profilePicture.png" width="500px" height="500px"> -->
       <h1>Hi,</h1>
-      <h1>I'm <span style="color:	#1abc9c;">Tim.</span></h1>
-      <div class="styleWord">
-        <h1>Full Stack Developer</h1>
-      </div>
+      <h1>I'm <span style="color:	#1abc9c;">Tim,</span></h1>
+      <h1>a <span class="animate"></span></h1>
+      <script type="text/javascript" src="typed.js"></script>
+        <script>
+          var typed = new Typed(".animate", {
+            strings: ["Full Stack Developer.", "Designer.", "Student.","Musician.",],
+            typeSpeed: 80,
+            backSpeed: 70,
+            loop: true
+          });
+        </script>
+
       <p><%= startingContent %></p>
 
       <div class="w3-animate-opacity">
         <ul class="nav navbar-nav navbar-space breakBox">
           <!-- 6 -->
-          <a href="#"><i class="material-icons" style='font-size:32px; color: white'>email</i></a>
-          <a href="https://github.com/timhyc19" target="_blank"><i class='fab fa-github' style='font-size:33px; color: white'></i></a>
-          <a href="https://www.linkedin.com/in/tim-chung-7b12a9194/" target="_blank"><i class='fab fa-linkedin' style='font-size:34px; color: white'></i></a>
+          <a href="mailto:t22chung@uwaterloo.ca"><i class="material-icons zoom" style='font-size:32px; color: white'>email</i></a>
+          <a href="https://github.com/timhyc19" target="_blank"><i class='fab fa-github zoom' style='font-size:33px; color: white'></i></a>
+          <a href="https://www.linkedin.com/in/tim-chung-7b12a9194/" target="_blank"><i class='fab fa-linkedin zoom' style='font-size:34px; color: white'></i></a>
         </ul>
       </div>
     </div>
   </div>
 
 <div class="buttonPad">
-  <a href="\compose"><button class="btn btn2">Make a Post</button>  </a>
+  <a href="\compose"><button class="btn btn2">Make a Post</button></a>
 </div>
 
 
   <div class="blogText w3-animate-left">
     <h1>Blog:</h1>
+
 
     <% console.log(posts); %>
 
