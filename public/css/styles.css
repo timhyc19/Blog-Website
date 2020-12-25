@@ -4,7 +4,7 @@
 }
 .navbar {
     padding-top: 15px;
-    padding-bottom: 15px;
+    padding-bottom: 0px;
     border: 0;
     border-radius: 0;
     margin-bottom: 0;
@@ -27,12 +27,13 @@
 }
 
 .footer {
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	bottom: 0;
 	width: 100%;
 	height: 60px;
 	background-color: black;
+  background-attachment: fixed;
 }
 
 
@@ -64,13 +65,17 @@
   padding-left: 0px;
 }
 
+.block1 p{
+  color: grey;
+}
+
 .block2{
-  padding-bottom: 120px;
+  padding-bottom: 12px;
 }
 
 .breakBox{
   padding-top: 15px;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 
 .button{
@@ -93,6 +98,7 @@
   padding-left: 20px;
   border-style: solid;
   border-color: white;
+  border-radius: 25px;
 }
 
 .borderExample{
@@ -125,4 +131,65 @@ img{
     background-size:cover;
 }
 
-.img1{background-image:url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');}
+.composeStyle label{
+  color: white;
+  padding-top: 20px;
+  font-family: 'Times New Roman', serif;
+  font-size: 30px;
+}
+
+.btn{
+  border: 2px solid #1abc9c;
+  background: none;
+  padding: 10px 15px;
+  font-size: 20px;
+  font-family: "montserrat";
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn2{
+  color: white;
+}
+
+.btn2:hover{
+  color: black;
+}
+
+.btn::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background: #1abc9c;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.btn2::before{
+  bottom: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.btn2:hover::before{
+  height: 180%;
+}
+
+.buttonPad{
+  padding-bottom: 15px;
+}
+
+.styleWord h1:hover{
+  color: #1abc9c;
+  transition: 0.8s;
+}
+
+.img1{background-image:url('https://www.shad.ca/wp-content/uploads/2019/05/SHAD-footer-logo@2x.png');}
+
+.img2{background-image:url('https://bostonpizza.com/content/dam/bostonpizza/bp-foundation/images/high-resolution/charity-partners/big_brother_sister_white_logo.png');}
+
+.img3{background-image:url('https://www.shad.ca/wp-content/uploads/2019/05/SHAD-footer-logo@2x.png');}

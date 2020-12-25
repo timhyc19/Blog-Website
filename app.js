@@ -5,7 +5,7 @@ const bodyParser = require("body-parser");
 const ejs = require("ejs");
 const _ = require("lodash");
 
-const homeStartingContent = "Computer Science Student 1B";
+const homeStartingContent = "University of Waterloo | Computer Science Student 1B";
 
 const projectContent = "Some of my Projects";
 
