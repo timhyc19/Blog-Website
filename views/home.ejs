@@ -23,7 +23,7 @@
       <div class="w3-animate-opacity">
         <ul class="nav navbar-nav navbar-space breakBox">
           <!-- 6 -->
-          <a href="mailto:t22chung@uwaterloo.ca"><i class="material-icons zoom" style='font-size:32px; color: white'>email</i></a>
+          <a href="mailto:t22chung@uwaterloo.ca"><i class="material-icons zoom" style='font-size:32px; color: white;'>email</i></a>
           <a href="https://github.com/timhyc19" target="_blank"><i class='fab fa-github zoom' style='font-size:33px; color: white'></i></a>
           <a href="https://www.linkedin.com/in/tim-chung-7b12a9194/" target="_blank"><i class='fab fa-linkedin zoom' style='font-size:34px; color: white'></i></a>
         </ul>
@@ -45,7 +45,7 @@
     <% posts.forEach(function(post){ %>
 
     <h1><%=post.title %></h1>
-    <p>
+    <p style="color: white;">
       <%=post.content.substring(0,100) + " ..." %>
       <a href="/posts/<%= post.title%>">Read More</a>
     </p>

@@ -203,6 +203,20 @@ img{
   transform: scale(1.5);
 }
 
-.informationProjects p,h3{
+.informationProjects p{
   color: white;
+  border:3px;
+  border-style: solid;
+  border-radius:10px;
+  border-color: white;
+  padding: 20px;
+}
+
+.informationProjects h3{
+  color: white;
+  padding-bottom: 10px;
+}
+
+.informationProjects i{
+  padding-left: 10px;
 }
