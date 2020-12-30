@@ -7,10 +7,19 @@
       <!-- <img src="profilePicture.png" width="500px" height="500px"> -->
       <h1 style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;"><span style="color: #1abc9c;">var</span> Welcome <span style="color: #33AEFF">=</span> {</h1>
       <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">Hi</h1>
+      <p class="clock" id="demo" onload="myFunction()"></p>
       <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">I'm <span style="color:	#1abc9c;">Tim,</span></h1>
       <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">a <span class="animate"></span>}</h1>
 
+
         <script>
+        setInterval(myFunction, 1);
+        function myFunction() {
+          var d = new Date();
+          var n = d.toLocaleTimeString();
+          document.getElementById("demo").innerHTML = n;
+        }
+
           var typed = new Typed(".animate", {
             strings: ["Full Stack Developer.", "Designer.", "Student.","Musician.",],
             typeSpeed: 80,
