@@ -66,7 +66,7 @@
 }
 
 .block1 p{
-  color: grey;
+  color: white;
 }
 
 .block2{
@@ -219,4 +219,10 @@ img{
 
 .informationProjects i{
   padding-left: 10px;
+}
+
+.clock{
+  float: right;
+  font-size: 60px;
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
 }

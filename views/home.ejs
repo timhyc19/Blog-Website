@@ -5,11 +5,23 @@
     <div class="block1">
       <b></b>
       <!-- <img src="profilePicture.png" width="500px" height="500px"> -->
-      <h1>Hi,</h1>
-      <h1>I'm <span style="color:	#1abc9c;">Tim,</span></h1>
-      <h1>a <span class="animate"></span></h1>
+      <h1 style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;"><span style="color: #1abc9c;">var</span> Welcome <span style="color: #33AEFF">=</span> {</h1>
+      <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">Hi</h1>
+      <p class="clock" id="demo" onload="myFunction()"></p>
+      <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">I'm <span style="color:	#1abc9c;">Tim,</span></h1>
+      <h1 style="padding-left: 30px; font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">a <span class="animate"></span>}</h1>
 
+      <p>
+        TESTING
+        </p>
         <script>
+        setInterval(myFunction, 1);
+        function myFunction() {
+          var d = new Date();
+          var n = d.toLocaleTimeString();
+          document.getElementById("demo").innerHTML = n;
+        }
+
           var typed = new Typed(".animate", {
             strings: ["Full Stack Developer.", "Designer.", "Student.","Musician.",],
             typeSpeed: 80,
@@ -32,12 +44,12 @@
   </div>
 
 <div class="buttonPad">
-  <a href="\compose"><button class="btn btn2">Make a Post</button></a>
+  <a href="\compose"><button class="btn btn2" style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">Make a Post</button></a>
 </div>
 
 
   <div class="blogText w3-animate-left">
-    <h1>Blog:</h1>
+    <h1 style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">Blog:</h1>
 
 
     <% console.log(posts); %>
