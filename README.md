@@ -8,3 +8,8 @@
  Next Steps:
  
  -Imlementing a database using MongoDB and Mongoose CRUD operations for savable blog posts.
+
+
+Deployed the app using herokue. Link: 
+
+https://sheltered-reef-56791.herokuapp.com/
