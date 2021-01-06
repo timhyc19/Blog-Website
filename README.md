@@ -10,6 +10,6 @@
  -Imlementing a database using MongoDB and Mongoose CRUD operations for savable blog posts.
 
 
-Deployed the app using herokue. Link: 
+Deployed the app using heroku. Link: 
 
 https://sheltered-reef-56791.herokuapp.com/
