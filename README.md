@@ -6,4 +6,5 @@
  - EJS template 
  
  Next Steps:
+ 
  -Imlementing a database using MongoDB and Mongoose CRUD operations for savable blog posts.
