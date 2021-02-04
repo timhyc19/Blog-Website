@@ -197,9 +197,11 @@ img{
     display:none;
 }
 
+.zoom{
+  transition: .2s ease-in-out;
+}
+
 .zoom:hover{
-  -ms-transform: scale(1.5); /* IE 9 */
-  -webkit-transform: scale(1.5); /* Safari 3-8 */
   transform: scale(1.5);
 }
 
@@ -210,11 +212,13 @@ img{
   border-radius:10px;
   border-color: white;
   padding: 20px;
+  font-size: 18px;
 }
 
 .informationProjects h3{
   color: white;
   padding-bottom: 10px;
+  font-size: 29px;
 }
 
 .informationProjects i{
@@ -223,6 +227,24 @@ img{
 
 .clock{
   float: right;
-  font-size: 60px;
+  font-size: 20px;
   font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+  padding-top: 10px;
+  padding-right: 80px;
+}
+
+.videoBox{
+  background-color: lightgrey;
+  border: 15px solid white;
+  padding: 100px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+.circle{
+  transition: .2s ease-in-out;
+}
+
+.circle:hover{
+  transform: scale(1.2);
 }
