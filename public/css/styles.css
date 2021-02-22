@@ -205,6 +205,14 @@ img{
   transform: scale(1.5);
 }
 
+.zoom2{
+  transition: .2s ease-in-out;
+}
+
+.zoom2:hover{
+  transform: scale(1.1);
+}
+
 .informationProjects p{
   color: white;
   border:3px;
@@ -247,4 +255,32 @@ img{
 
 .circle:hover{
   transform: scale(1.2);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.row h3{
+  padding-left: 50px;
+  padding-bottom: 13px;
+  font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;
+  color: white
+}
+
+.row img{
+  border: 5px solid #555 
 }
