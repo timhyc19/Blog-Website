@@ -22,7 +22,7 @@
         }
 
           var typed = new Typed(".animate", {
-            strings: ["Full Stack Developer.", "Designer.", "Student.","Musician.",],
+            strings: ["Full Stack Developer.", "Data Scientist.", "Designer.", "Student.","Musician.",],
             typeSpeed: 80,
             backSpeed: 70,
             loop: true
@@ -43,7 +43,13 @@
       </div>
     </div>
   </div>
-
+  <hr />
+  <h1 style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier; color: white">About me</h1>
+  <br>
+  <h3 style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier; color: white">Hi, welcome to my personal blog website! My names Tim, and I'm a computer science student at the University of Waterloo. Some of my interests include Full Stack Development, Data Science, and Machine Learning. In my free time, I like to play sports, and be creative with the guitar!</h3>
+  <br>
+  <br>
+  <hr />
 <div class="buttonPad">
   <a href="\compose"><button class="btn btn2" style="font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier;">Make a Post</button></a>
 </div>
@@ -60,17 +66,21 @@
     <h1><%=post.title %></h1>
     <p style="color: white;">
       <%=post.content.substring(0,100) + " ..." %>
-      <a href="/posts/<%=post._id%>">Read More</a>
+      <a href="/posts/<%=post.title%>">Read More</a>
     </p>
 
     <% }); %>
   </div>
+  <br>
+  <br>
+  <br>
   <br />
   <br />
   <br />
   <br />
   <br />
   <br />
+
 
 </div>
 
